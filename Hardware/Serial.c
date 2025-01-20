@@ -241,7 +241,7 @@ void Serial_ProcessCommand(char *pid)
         Serial_SendString("成功！\r\n");
     }
 	
-	if (pid[0] == 'Y' && strlen(pid) > 1 && pid[1] == 'A' &&pid[1] == '4')  // P格式为 @YA3
+	if (pid[0] == 'Y' && strlen(pid) > 1 && pid[1] == 'A' &&pid[1] == '4')  // P格式为 @YA4
     {
         float p;
         sscanf(pid + 2, "%f", &p);  // 解析时间
